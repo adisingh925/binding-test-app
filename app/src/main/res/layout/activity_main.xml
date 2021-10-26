@@ -11,6 +11,10 @@
         <variable
             name="user"
             type="Model" />
+
+        <variable
+            name="viewmodel"
+            type="com.app.binding.Viewmodel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -33,7 +37,7 @@
             android:id="@+id/textview1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="aditya"
+            android:text="@{viewmodel.message}"
             android:textSize="30dp"
             app:layout_constraintBottom_toTopOf="@id/edittext"
             app:layout_constraintRight_toRightOf="parent"
